@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram clone</title>
+  <link rel="stylesheet" href="/dist/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-serif">
+  <!-- navbar -->
+
+  <nav class="border-b bg-white py-4 px-3">
+    <div class="flex justify-between">
+      <!-- logo -->
+
+      <img src="./images/instagram.png" alt="instagram logo" class="h-8 object-fill cursor-pointer" />
+
+      <!-- search bar -->
+      <div class="text-gray-500 relative hidden md:block">
+        <input type="search" placeholder="search"
+          class="outline-none text-center border bg-gray-100 focus:border-gray-500 rounded ml-2 px-4" />
+        <i class="fa fa-search absolute left-0 ml-2 mt-1 pl-1"></i>
+      </div>
+
+      <!-- buttons -->
+
+      <div class="space-x-3">
+        <a href="#" class="inline-block bg-blue-500 text-white font-bold px-2 py-1 rounded text-sm">Log in</a>
+        <a href="#" class="inline-block text-blue-500 font-semibold text-sm">Sign up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main content -->
+  <main class="bg-gray-100 h-screen bg-opacity-25">
+    <div class=" md:w-8/12 md:mx-auto">
+      <header class="flex flex-wrap p-4 items-center py-8 ">
+        <!-- profile image -->
+        <div class=" md:w-3/12 md:ml-16">
+          <img class="md:h-40 md:w-40 h-20 w-20 rounded-full border-2 border-pink-600 p-1" src="/images/profile.jpg" alt="">
+        </div>
+
+        <div class="md:w-7/12 w-8/12 items-center">
+          <!-- profile name and follow button -->
+          <div class=" md:flex  md:space-x-2 mb-4 px-4">
+            <h2 class=" text-3xl font-light inline-block">Audrey Silva</h2>
+            <a href="" class="bg-blue-500 px-2 text-center py-1 text-white font-semibold rounded block">follow</a>
+          </div>
+
+          <!-- profile numbers -->
+          <ul class="  md:flex hidden  space-x-8 mt-2 justify-between font-semibold list-none mb-3">
+            <li>
+              <span>200</span> Posts
+              <span>100k</span> Followers
+              <span>1K</span> Following
+            </li>
+          </ul>
+
+          <!-- profile bio -->
+          <div class="hidden md:block">
+            <h1 class="font-semibold">
+              Coding is cool...
+            </h1>
+            <span>Travel,Nature and Music</span>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+        </div>
+
+         <!-- profile bio -->
+          <div class=" text-sm md:hidden my-4">
+            <h1 class="font-semibold">
+              Coding is cool...
+            </h1>
+            <span>Travel,Nature and Music</span>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+      </header>
+      <!-- header end  -->
+
+      <div>
+        <!-- profile numbers -->
+        <ul class="flex md:hidden justify-around font-bold border-t text-gray-500 text-sm text-center">
+          <li>
+            <span class="font-semibold text-gray-800 block">2OO</span>
+            Posts
+          </li>
+          <li>
+            <span class="font-semibold text-gray-800 block">100k</span> Followers
+          </li>
+          <li>
+            <span class="font-semibold text-gray-800 block">400</span> Followings
+          </li>
+        </ul>
+        <!-- instagram icons -->
+
+        <ul class="flex justify-around md:justify-center space-x-12 uppercase text-gray-600 border-t">
+          <li class="md:border-t md:border-gray-700">
+            <a href="" class="inline-block">
+              <i class="fas fa-th-large p-3"></i>
+              <span class="hidden md:inline">Posts</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inline-block p-3">
+              <i class="fas fa-square"></i>
+              <span class="hidden md:inline">igtv</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inline-block p-3"></a>
+              <i class="fas fa-user"></i>
+              <span class="hidden md:inline">tagged</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+
+
+
+
+
+</body>
+
+</html>
